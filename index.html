@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Mahad Ishaaq Lubega — AI & Data Science student at Marwadi University. Projects, skills, and contact." />
+  <meta name="author" content="Mahad Ishaaq Lubega" />
+  <title>Mahad Ishaaq Lubega | AI &amp; Data Science Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="header" id="top">
+    <nav class="navbar" aria-label="Primary">
+      <a href="#home" class="logo">Mahad Ishaaq Lubega</a>
+      <button
+        type="button"
+        class="nav-toggle"
+        id="nav-toggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+      >
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+      </button>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle light mode" title="Toggle theme">
+        <span class="theme-icon theme-icon-moon" aria-hidden="true">🌙</span>
+        <span class="theme-icon theme-icon-sun" aria-hidden="true">☀️</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="home" class="hero" aria-labelledby="hero-name">
+      <div class="hero-inner container">
+        <div class="hero-content reveal">
+          <p class="hero-eyebrow">Marwadi University · AI, ML &amp; DS</p>
+          <h1 id="hero-name">Mahad Ishaaq Lubega</h1>
+          <p class="hero-title">
+            <span class="typed-prefix">AI &amp; Data Science Student</span>
+            <span class="typed-cursor" aria-hidden="true">|</span>
+          </p>
+          <p class="hero-bio">
+            Passionate about Artificial Intelligence, Data Science, software development,
+            and building practical technology solutions that solve real-world problems.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="ai-visual">
+            <div class="grid-bg"></div>
+            <svg class="neural-svg" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#2dd4bf" />
+                  <stop offset="100%" stop-color="#38bdf8" />
+                </linearGradient>
+              </defs>
+              <!-- connections -->
+              <g class="neural-lines" stroke="url(#nodeGrad)" stroke-width="1.2" fill="none" opacity="0.45">
+                <line x1="40" y1="60" x2="120" y2="100" />
+                <line x1="40" y1="160" x2="120" y2="100" />
+                <line x1="40" y1="160" x2="120" y2="180" />
+                <line x1="40" y1="260" x2="120" y2="180" />
+                <line x1="120" y1="100" x2="200" y2="80" />
+                <line x1="120" y1="100" x2="200" y2="160" />
+                <line x1="120" y1="180" x2="200" y2="160" />
+                <line x1="120" y1="180" x2="200" y2="240" />
+                <line x1="200" y1="80" x2="280" y2="120" />
+                <line x1="200" y1="160" x2="280" y2="120" />
+                <line x1="200" y1="160" x2="280" y2="200" />
+                <line x1="200" y1="240" x2="280" y2="200" />
+              </g>
+              <!-- nodes -->
+              <g class="neural-nodes" fill="url(#nodeGrad)">
+                <circle class="node n1" cx="40" cy="60" r="8" />
+                <circle class="node n2" cx="40" cy="160" r="8" />
+                <circle class="node n3" cx="40" cy="260" r="8" />
+                <circle class="node n4" cx="120" cy="100" r="10" />
+                <circle class="node n5" cx="120" cy="180" r="10" />
+                <circle class="node n6" cx="200" cy="80" r="9" />
+                <circle class="node n7" cx="200" cy="160" r="11" />
+                <circle class="node n8" cx="200" cy="240" r="9" />
+                <circle class="node n9" cx="280" cy="120" r="10" />
+                <circle class="node n10" cx="280" cy="200" r="10" />
+              </g>
+            </svg>
+            <div class="float-card fc1">
+              <span class="fc-label">ML</span>
+              <span class="fc-value">Models</span>
+            </div>
+            <div class="float-card fc2">
+              <span class="fc-label">DATA</span>
+              <span class="fc-value">Insights</span>
+            </div>
+            <div class="float-card fc3">
+              <span class="fc-label">AI</span>
+              <span class="fc-value">Systems</span>
+            </div>
+            <div class="orbit orbit-1"></div>
+            <div class="orbit orbit-2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about section" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading" class="section-title reveal">About Me</h2>
+        <p class="section-subtitle reveal">Student · Builder · Learner</p>
+
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <h3 class="about-name">Mahad Ishaaq Lubega</h3>
+            <ul class="about-meta">
+              <li>
+                <span class="meta-label">Degree</span>
+                <span>Bachelor of Science in Artificial Intelligence and Data Science</span>
+              </li>
+              <li>
+                <span class="meta-label">University</span>
+                <span>Marwadi University</span>
+              </li>
+              <li>
+                <span class="meta-label">Department</span>
+                <span>Department of AI, ML &amp; DS</span>
+              </li>
+            </ul>
+            <div class="about-text">
+              <p>
+                I am an AI &amp; Data Science student focused on understanding how data,
+                algorithms, and software come together to solve practical problems.
+                My interests include Artificial Intelligence, Machine Learning, Data Science,
+                software development, data analysis, and emerging technologies.
+              </p>
+              <p>
+                I enjoy building projects that combine clean code with thoughtful design —
+                from full-stack applications to analytical workflows — and using Git &amp; GitHub
+                to manage and share my work.
+              </p>
+            </div>
+          </div>
+
+          <div class="highlights reveal" role="list">
+            <div class="highlight-item" role="listitem">
+              <span class="highlight-icon" aria-hidden="true">◈</span>
+              <h3>AI &amp; Data Science</h3>
+              <p>Student pathway in AI, ML &amp; DS</p>
+            </div>
+            <div class="highlight-item" role="listitem">
+              <span class="highlight-icon" aria-hidden="true">▣</span>
+              <h3>Projects</h3>
+              <p>AI &amp; software builds</p>
+            </div>
+            <div class="highlight-item" role="listitem">
+              <span class="highlight-icon" aria-hidden="true">⎇</span>
+              <h3>Git &amp; GitHub</h3>
+              <p>Version control &amp; hosting</p>
+            </div>
+            <div class="highlight-item" role="listitem">
+              <span class="highlight-icon" aria-hidden="true">{ }</span>
+              <h3>Web Development</h3>
+              <p>HTML, CSS &amp; JavaScript</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects section" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 id="projects-heading" class="section-title reveal">Featured Projects</h2>
+        <p class="section-subtitle reveal">Selected academic and personal work</p>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-badge">Full Stack</span>
+              <h3>STOCKDESK — Inventory Management System</h3>
+            </div>
+            <p>
+              A modern inventory and sales management system designed to help businesses
+              manage products, stock, sales, users, and reports efficiently.
+            </p>
+            <ul class="tech-tags" aria-label="Technologies used">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>PostgreSQL</li>
+              <li>Sequelize</li>
+              <li>JWT</li>
+            </ul>
+            <a href="#" class="btn btn-sm btn-outline project-link">View Project</a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-badge">Portfolio</span>
+              <h3>AI Project Portfolio</h3>
+            </div>
+            <p>
+              A responsive portfolio website designed to showcase AI, Data Science,
+              software development projects, technical skills, and professional information.
+            </p>
+            <ul class="tech-tags" aria-label="Technologies used">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Git</li>
+              <li>GitHub Pages</li>
+            </ul>
+            <a
+              href="https://github.com/mahad20324"
+              class="btn btn-sm btn-outline project-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >View on GitHub</a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-badge">AI / DS</span>
+              <h3>AI &amp; Data Science Projects</h3>
+            </div>
+            <p>
+              A collection of academic and practical projects involving artificial intelligence,
+              machine learning, data analysis, statistics, and computational problem solving.
+            </p>
+            <ul class="tech-tags" aria-label="Technologies used">
+              <li>Python</li>
+              <li>Machine Learning</li>
+              <li>Data Science</li>
+              <li>Statistics</li>
+            </ul>
+            <a href="#" class="btn btn-sm btn-outline project-link">View Project</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills section" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 id="skills-heading" class="section-title reveal">Technical Skills</h2>
+        <p class="section-subtitle reveal">Tools and topics I am learning and applying</p>
+
+        <div class="skills-categories">
+          <div class="skill-category reveal">
+            <h3>Programming</h3>
+            <ul class="skill-badges">
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div class="skill-category reveal">
+            <h3>AI &amp; Data Science</h3>
+            <ul class="skill-badges">
+              <li>Artificial Intelligence</li>
+              <li>Machine Learning</li>
+              <li>Data Analysis</li>
+              <li>Data Visualization</li>
+              <li>Statistics</li>
+            </ul>
+          </div>
+          <div class="skill-category reveal">
+            <h3>Tools &amp; Technologies</h3>
+            <ul class="skill-badges">
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>VS Code</li>
+              <li>PostgreSQL</li>
+              <li>Node.js</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact section" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading" class="section-title reveal">Let's Connect</h2>
+        <p class="section-subtitle reveal">Reach out via email, GitHub, or the form below</p>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <a
+              class="contact-card"
+              href="mailto:lubegamahadishaaq.128956@marwadiuniversity.ac.in"
+            >
+              <span class="contact-icon" aria-hidden="true">✉</span>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">lubegamahadishaaq.128956@marwadiuniversity.ac.in</span>
+            </a>
+            <a
+              class="contact-card"
+              href="https://github.com/mahad20324"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="contact-icon" aria-hidden="true">⌘</span>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">github.com/mahad20324</span>
+            </a>
+            <!-- Replace href="#" with your LinkedIn profile URL when available -->
+            <a class="contact-card" href="#" id="linkedin-link">
+              <span class="contact-icon" aria-hidden="true">in</span>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">Mahad Ishaaq Lubega</span>
+            </a>
+          </div>
+
+          <form class="contact-form reveal" id="contact-form" novalidate>
+            <p class="form-note">
+              This is a frontend demo form for the portfolio. It validates input in the browser
+              and does not send messages to a server.
+            </p>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required placeholder="Your name" />
+              <span class="field-error" id="name-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required placeholder="you@example.com" />
+              <span class="field-error" id="email-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Your message"></textarea>
+              <span class="field-error" id="message-error" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            <p class="form-success" id="form-success" hidden role="status">
+              Thank you — your message looks valid. This demo form does not transmit data.
+              Please email me directly at
+              <a href="mailto:lubegamahadishaaq.128956@marwadiuniversity.ac.in">lubegamahadishaaq.128956@marwadiuniversity.ac.in</a>.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="copyright">© 2026 Mahad Ishaaq Lubega. All Rights Reserved.</p>
+      <ul class="footer-links">
+        <li>
+          <a href="https://github.com/mahad20324" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </li>
+        <li>
+          <!-- Replace href="#" with LinkedIn URL when available -->
+          <a href="#" id="footer-linkedin">LinkedIn</a>
+        </li>
+        <li>
+          <a href="mailto:lubegamahadishaaq.128956@marwadiuniversity.ac.in">Email</a>
+        </li>
+      </ul>
+      <p class="footer-meta">
+        Experiment 1 · Marwadi University · Department of AI, ML &amp; DS
+      </p>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top" hidden>
+    ↑
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
